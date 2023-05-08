@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+  
+header {
+  display: inline;
+}
+
+nav {
+  background-color: black;
+  padding: 10px;
+  text-align: center;
+  top: 0;
+}
+  
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 20px;
+}
+  
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+}
+  
+nav a:hover {
+  background-color: #6495ED;
+  padding: 10px;
+  border-radius: 5px;
+  transition: .3s;
+}
+
+main {
+    padding: 30px;
+    overflow: auto;
+  }
+  
+  main p {
+    color: black;
+    line-height: 18px;
+    font-size: 15px;
+    text-align: justify;
+  }
+
+footer {
+  width: 100%;
+  height: 40px;
+  justify-content: space-between;
+  font-size: 20px;
+  background-color: #f7c873;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+h1 {
+    color: black;
+    word-spacing: 2px;
+    line-height: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+  color: black;
+  word-spacing: 2px;
+  line-height: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#second {
+    float: center;
+    width: 100%;
+  }
+
+.awal {
+  font-size: 15px;
+  padding: 7px;
+  background-color: #f3af26;
+  text-align: center;
+  color: black;
+}
+
+.tengah {
+    padding: 25px;
+    background-color: #ffee93;
+    text-align: center;
+    color: black;
+  }
+  
+.tengah header {
+    background-color: #60686a;
+    text-align: center;
+}
+
+.tengah p {
+  color: black;
+  word-spacing: 2px;
+  line-height: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+  
+.display-image {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}
+
+.tengah img{
+  width: 250px;
+  height: 310px;
+  border-radius: 100%;
+  text-align: center;
+}
+
+.tombol {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  background: #f1f1f1;
+  margin: 10px;
+  border-radius: 30%;
+  box-sizing: 0 5px 15px -5px #00000070;
+  overflow: hidden;
+  position: relative;
+  color: #3498db;
+  top: 50%;
+  transform: translateY(-50%);
+  transform: translateX(450%);
+  text-align: center;
+}
+
+.tombol i {
+  transition: 0.2s linear;
+  font-size: 26px;
+  line-height: 90px;
+}
+
+.tombol:hover {
+  transition: scale(1.3);
+  color: #f1f1f1;
+}
+
+.tombol::before{
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  left: -110px;
+  top: 90%;
+  transform: rotate(45deg);
+  background: #3498db;
+}
+
+.tombol:hover::before{
+  left: -110px;
+  top: 90%;
+  animation: aaa 0.7s 1;
+}
+
+.container {
+    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    #second,
+    aside {
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  @keyframes aaa{
+    0%{
+      left: -110%;
+      top: 90%;
+    }
+    50%{
+      left: 10%;
+      top: -30%;
+    }
+    100%{
+      left: -10%;
+      top: -10%;
+    }
+  }
+
+  /*----- scroll bar ------*/
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+    border-radius: 5px;
+  }
